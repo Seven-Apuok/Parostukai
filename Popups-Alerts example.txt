@@ -1,0 +1,109 @@
+Handling popups and alerts in Selenium WebDriver using Java involves using the Alert interface. Here’s a step-by-step guide to help you manage different types of alerts:
+
+1. Set Up Your Environment
+Ensure you have the Java Development Kit (JDK) installed.
+Use an IDE like Eclipse or IntelliJ IDEA.
+Add the Selenium Java Client library to your project.
+2. Create a WebDriver Instance
+Set up your WebDriver:
+
+Java
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AlertHandlingTest {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://example.com/alert");
+    }
+}
+AI-generated code. Review and use carefully. More info on FAQ.
+3. Handle Different Types of Alerts
+Simple Alert
+A simple alert has an OK button.
+
+Java
+
+import org.openqa.selenium.Alert;
+
+Alert alert = driver.switchTo().alert();
+System.out.println(alert.getText()); // Get the alert text
+alert.accept(); // Click OK
+AI-generated code. Review and use carefully. More info on FAQ.
+Confirmation Alert
+A confirmation alert has OK and Cancel buttons.
+
+Java
+
+Alert confirmAlert = driver.switchTo().alert();
+System.out.println(confirmAlert.getText()); // Get the alert text
+confirmAlert.dismiss(); // Click Cancel
+AI-generated code. Review and use carefully. More info on FAQ.
+Prompt Alert
+A prompt alert allows the user to enter text.
+
+Java
+
+Alert promptAlert = driver.switchTo().alert();
+System.out.println(promptAlert.getText()); // Get the alert text
+promptAlert.sendKeys("Sample text"); // Enter text
+promptAlert.accept(); // Click OK
+AI-generated code. Review and use carefully. More info on FAQ.
+4. Complete Example
+Here’s a complete example combining all the steps:
+
+Java
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.Alert;
+
+public class AlertHandlingTest {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://example.com/alert");
+
+        // Handle Simple Alert
+        WebElement simpleAlertButton = driver.findElement(By.id("simpleAlert"));
+        simpleAlertButton.click();
+        Alert simpleAlert = driver.switchTo().alert();
+        System.out.println(simpleAlert.getText());
+        simpleAlert.accept();
+
+        // Handle Confirmation Alert
+        WebElement confirmAlertButton = driver.findElement(By.id("confirmAlert"));
+        confirmAlertButton.click();
+        Alert confirmAlert = driver.switchTo().alert();
+        System.out.println(confirmAlert.getText());
+        confirmAlert.dismiss();
+
+        // Handle Prompt Alert
+        WebElement promptAlertButton = driver.findElement(By.id("promptAlert"));
+        promptAlertButton.click();
+        Alert promptAlert = driver.switchTo().alert();
+        System.out.println(promptAlert.getText());
+        promptAlert.sendKeys("Sample text");
+        promptAlert.accept();
+
+        driver.quit();
+    }
+}
+AI-generated code. Review and use carefully. More info on FAQ.
+Additional Resources
+For more detailed information, you can refer to resources like Baeldung1 and BrowserStack2.
+
+Would you like more details on any specific part of this process?
+
+Learn more
+
+1
+
+baeldung.com
+2
+
+browserstack.com

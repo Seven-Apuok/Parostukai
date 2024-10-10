@@ -1,0 +1,45 @@
+To take a screenshot after a test in Selenium using Java, you can use the TakesScreenshot interface. Here’s a step-by-step guide:
+
+Set Up WebDriver: Initialize your WebDriver and navigate to the desired web page.
+Take Screenshot: Use the TakesScreenshot interface to capture the screenshot.
+Save the Screenshot: Save the screenshot to a specified location using the FileUtils class.
+Here’s a sample code snippet to illustrate these steps:
+
+Java
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.apache.commons.io.FileUtils;
+import java.io.File;
+import java.io.IOException;
+
+public class ScreenshotExample {
+    public static void main(String[] args) {
+        // Set up the WebDriver and navigate to the page
+        WebDriver driver = new ChromeDriver();
+        driver.get("URL_OF_YOUR_PAGE");
+
+        // Take a screenshot
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+        // Save the screenshot to a location
+        try {
+            FileUtils.copyFile(screenshot, new File("path/to/save/screenshot.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Close the browser
+        driver.quit();
+    }
+}
+AI-generated code. Review and use carefully. More info on FAQ.
+Key Points:
+WebDriver Setup: Ensure you have the correct WebDriver for your browser.
+TakesScreenshot Interface: This interface is used to capture the screenshot.
+FileUtils Class: This class from Apache Commons IO is used to save the screenshot file.
+For more detailed tutorials, you can check out resources like GeeksforGeeks or Guru9912.
+
+Feel free to ask if you have any more questions or need further assistance!
