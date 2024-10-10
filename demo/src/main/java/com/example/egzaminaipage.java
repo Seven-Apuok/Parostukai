@@ -15,26 +15,7 @@ public class egzaminaipage extends egzaminainustatymai {
     @FindBy(xpath="")
     WebElement wName;
 
-    @FindBy(xpath="")
-    WebElement wName;
-
-    @FindBy(xpath="")
-    WebElement wName;
-
-    @FindBy(xpath="")
-    WebElement wName;
-
-    @FindBy(xpath="")
-    WebElement wName;
-
-    @FindBy(xpath = "")
-    WebElement cowNames;
-
-    @FindBy(xpath = "")
-    WebElement wName;
-
-    @FindBy(xpath = "")
-    WebElement wName;
+    
 
     //objektu savybes
 
