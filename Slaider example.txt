@@ -32,7 +32,7 @@ public class SliderAutomation {
         driver.quit();
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Key Points:
 Locator Strategy: Ensure you use the correct locator to find the slider element.
 Offset Values: The dragAndDropBy method takes two parameters: the x-offset and y-offset. Adjust these values based on how far you want to move the slider.
