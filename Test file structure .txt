@@ -2,6 +2,7 @@
 Install Java Development Kit (JDK): Ensure you have the JDK installed.
 Install an IDE: Use an Integrated Development Environment (IDE) like Eclipse or IntelliJ IDEA.
 Add Selenium Libraries: Download the Selenium Java Client library and add it to your project.
+
 2. Project Structure
 Organize your project with a clear structure:
 
@@ -43,7 +44,8 @@ public class BaseTest {
         }
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
+
 4. Write Test Cases
 Create test cases by extending the base test class:
 
@@ -70,7 +72,8 @@ public class LoginTest extends BaseTest {
         // Add assertions to verify the login was successful
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
+
 5. Use a Build Tool (Optional)
 If you’re using Maven, create a pom.xml file to manage dependencies:
 
@@ -96,7 +99,8 @@ XML
         </dependency>
     </dependencies>
 </project>
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
+
 6. Run Your Tests
 Use your IDE to run the tests.
 If using Maven, run the tests with:
