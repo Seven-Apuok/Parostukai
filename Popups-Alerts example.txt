@@ -4,6 +4,7 @@ Handling popups and alerts in Selenium WebDriver using Java involves using the A
 Ensure you have the Java Development Kit (JDK) installed.
 Use an IDE like Eclipse or IntelliJ IDEA.
 Add the Selenium Java Client library to your project.
+
 2. Create a WebDriver Instance
 Set up your WebDriver:
 
@@ -19,7 +20,8 @@ public class AlertHandlingTest {
         driver.get("https://example.com/alert");
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
+
 3. Handle Different Types of Alerts
 Simple Alert
 A simple alert has an OK button.
@@ -31,7 +33,7 @@ import org.openqa.selenium.Alert;
 Alert alert = driver.switchTo().alert();
 System.out.println(alert.getText()); // Get the alert text
 alert.accept(); // Click OK
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Confirmation Alert
 A confirmation alert has OK and Cancel buttons.
 
@@ -40,7 +42,7 @@ Java
 Alert confirmAlert = driver.switchTo().alert();
 System.out.println(confirmAlert.getText()); // Get the alert text
 confirmAlert.dismiss(); // Click Cancel
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Prompt Alert
 A prompt alert allows the user to enter text.
 
@@ -50,7 +52,8 @@ Alert promptAlert = driver.switchTo().alert();
 System.out.println(promptAlert.getText()); // Get the alert text
 promptAlert.sendKeys("Sample text"); // Enter text
 promptAlert.accept(); // Click OK
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
+
 4. Complete Example
 Here’s a complete example combining all the steps:
 
@@ -93,7 +96,7 @@ public class AlertHandlingTest {
         driver.quit();
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Additional Resources
 For more detailed information, you can refer to resources like Baeldung1 and BrowserStack2.
 
