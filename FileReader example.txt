@@ -7,7 +7,7 @@ Java
 import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.IOException;
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Create a Method to Read Data from a File:
 This method will read the file line by line and store the data in a suitable data structure, like a Map.
 Java
@@ -30,7 +30,7 @@ public class FileUtil {
         return data;
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Use the Method in Your Selenium Test:
 Read the data from the file and use it to perform actions like logging in.
 Java
@@ -57,7 +57,7 @@ public class SeleniumTest {
         loginButton.click();
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 This example demonstrates how to use FileReader to read login credentials from a .txt file and use them in a Selenium WebDriver test. For more detailed information, you can refer to resources like GeeksforGeeks1.
 
 Would you like more details on any specific part of this process?
