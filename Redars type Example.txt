@@ -6,7 +6,7 @@ Java
 
 WebElement uploadElement = driver.findElement(By.id("uploadFile"));
 uploadElement.sendKeys("path/to/your/file.txt");
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Using Robot Class:
 Java
 
@@ -28,7 +28,8 @@ robot.keyRelease(KeyEvent.VK_V);
 robot.keyRelease(KeyEvent.VK_CONTROL);
 robot.keyPress(KeyEvent.VK_ENTER);
 robot.keyRelease(KeyEvent.VK_ENTER);
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
+
 2. Reading from Excel Files
 You can use libraries like Apache POI to read data from Excel files.
 
@@ -65,7 +66,8 @@ public class ExcelReader {
         file.close();
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
+
 3. Reading from JSON Files
 You can use libraries like Jackson or Gson to parse JSON files.
 
@@ -84,7 +86,8 @@ public class JsonReader {
         System.out.println(data);
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
+
 4. Reading from CSV Files
 You can use libraries like OpenCSV to read data from CSV files.
 
@@ -109,7 +112,7 @@ public class CsvReader {
         reader.close();
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 These examples show how you can extend Selenium WebDriver with Java to handle various file types, making your test automation more versatile and powerful. For more detailed guides, you can refer to resources like GeeksforGeeks1 and Baeldung2.
 
 Would you like more details on any specific file type or method?
