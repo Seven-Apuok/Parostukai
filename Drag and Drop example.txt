@@ -4,6 +4,7 @@ To perform a drag and drop action in Selenium WebDriver using Java, you can use 
 Ensure you have the Java Development Kit (JDK) installed.
 Use an IDE like Eclipse or IntelliJ IDEA.
 Add the Selenium Java Client library to your project.
+
 2. Create a WebDriver Instance
 Set up your WebDriver:
 
@@ -19,7 +20,7 @@ public class DragAndDropTest {
         driver.get("https://example.com/drag-and-drop");
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+ code. Review and use carefully. More info on FAQ.
 3. Locate the Elements
 Identify the elements you want to drag and drop:
 
@@ -40,7 +41,8 @@ import org.openqa.selenium.interactions.Actions;
 
 Actions actions = new Actions(driver);
 actions.dragAndDrop(sourceElement, targetElement).build().perform();
-AI-generated code. Review and use carefully. More info on FAQ.
+Review and use carefully. More info on FAQ.
+
 5. Complete Example
 Here’s a complete example combining all the steps:
 
@@ -67,7 +69,7 @@ public class DragAndDropTest {
         driver.quit();
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+Review and use carefully. More info on FAQ.
 Additional Methods
 You can also use other methods from the Actions class for more complex drag and drop actions:
 
