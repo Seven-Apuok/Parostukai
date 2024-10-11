@@ -7,7 +7,7 @@ Java
 
 WebElement button = driver.findElement(By.id(buttonId));
 button.click();
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 
 2. Send Keys
 Entering text into input fields, text areas, etc.
@@ -16,7 +16,7 @@ Java
 
 WebElement textField = driver.findElement(By.id(textFieldId));
 textField.sendKeys(Sample text);
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 
 3. Clear
 Clearing the content of input fields.
@@ -25,7 +25,7 @@ Java
 
 WebElement textField = driver.findElement(By.id(textFieldId));
 textField.clear();
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 
 4. Submit
 Submitting a form.
@@ -34,7 +34,8 @@ Java
 
 WebElement form = driver.findElement(By.id(formId));
 form.submit();
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
+
 5. Select
 Selecting options from dropdown menus.
 
@@ -45,7 +46,7 @@ import org.openqa.selenium.support.ui.Select;
 WebElement dropdown = driver.findElement(By.id(dropdownId));
 Select select = new Select(dropdown);
 select.selectByVisibleText(Option 1);
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 
 6. Actions Class
 For more complex interactions like drag and drop, double-click, right-click, etc., you can use the Actions class.
@@ -60,7 +61,7 @@ WebElement target = driver.findElement(By.id(targetId));
 
 Actions actions = new Actions(driver);
 actions.dragAndDrop(source, target).perform();
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Double Click
 Java
 
@@ -68,7 +69,7 @@ WebElement element = driver.findElement(By.id(elementId));
 
 Actions actions = new Actions(driver);
 actions.doubleClick(element).perform();
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Right Click (Context Click)
 Java
 
@@ -76,7 +77,7 @@ WebElement element = driver.findElement(By.id(elementId));
 
 Actions actions = new Actions(driver);
 actions.contextClick(element).perform();
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Keyboard Actions
 Performing keyboard actions like pressing keys.
 
@@ -86,7 +87,7 @@ import org.openqa.selenium.Keys;
 
 Actions actions = new Actions(driver);
 actions.sendKeys(Keys.ENTER).perform();
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 
 
 7. Handling Alerts
@@ -108,7 +109,8 @@ confirmAlert.dismiss();  Click Cancel
 Alert promptAlert = driver.switchTo().alert();
 promptAlert.sendKeys(Sample text);
 promptAlert.accept();  Click OK
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
+
 8. File Uploads
 Uploading files using the sendKeys method.
 
@@ -116,7 +118,7 @@ Java
 
 WebElement uploadElement = driver.findElement(By.id(uploadFile));
 uploadElement.sendKeys(pathtoyourfile.txt);
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 These examples cover a wide range of interactions you can perform with Selenium WebDriver in Java. For more detailed information, you can refer to resources like Guru991 and the Selenium Documentation2.
 
 Would you like more details on any specific action or method
