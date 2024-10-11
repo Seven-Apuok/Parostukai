@@ -9,7 +9,7 @@ Java
 
 WebDriver driver = new ChromeDriver();
 System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Read Login Data from a .txt File:
 Store your login credentials in a .txt file in the format:
 username=yourUsername
@@ -39,7 +39,7 @@ public class LoginData {
         return loginData;
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Navigate to the Login Page and Perform Login:
 Java
 
@@ -54,7 +54,7 @@ WebElement loginButton = driver.findElement(By.id("loginButton"));
 username.sendKeys(loginData.get("username"));
 password.sendKeys(loginData.get("password"));
 loginButton.click();
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Save Session Data (Cookies):
 After logging in, save the cookies to maintain the session.
 Java
@@ -63,7 +63,7 @@ Set<Cookie> cookies = driver.manage().getCookies();
 for (Cookie cookie : cookies) {
     System.out.println(cookie.getName() + ": " + cookie.getValue());
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Reuse Saved Session Data:
 Load the saved cookies in a new session to avoid logging in again.
 Java
@@ -72,7 +72,7 @@ for (Cookie cookie : cookies) {
     driver.manage().addCookie(cookie);
 }
 driver.navigate().refresh();
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 These steps will help you automate the login process using data from a .txt file and maintain the session for future use. For more detailed guidance, you can refer to resources like GeeksforGeeks1.
 
 Would you like more details on any specific part of this process?
