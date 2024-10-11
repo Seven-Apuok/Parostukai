@@ -35,7 +35,7 @@ public class ScreenshotExample {
         driver.quit();
     }
 }
-AI-generated code. Review and use carefully. More info on FAQ.
+code. Review and use carefully. More info on FAQ.
 Key Points:
 WebDriver Setup: Ensure you have the correct WebDriver for your browser.
 TakesScreenshot Interface: This interface is used to capture the screenshot.
